@@ -1,12 +1,80 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --color-primary: hsl(160deg, 100%, 30%);
+    --color-secondary-light: hsl(45deg, 100%, 50%);
+    --color-secondary-dark: hsl(45deg, 100%, 40%);
+    --color-black: hsl(0deg, 0%, 0%);
+    --color-grey-very-dark: hsl(0deg, 0%, 10%);
+    --color-grey-dark: hsl(0deg, 0%, 30%);
+    --color-grey-medium: hsl(0deg, 0%, 40%);
+    --color-grey-light: hsl(0deg, 0%, 60%);
+    --color-white: hsl(0deg, 0%, 100%);
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Add styles here! */
+h1 {
+    font-size: 2rem;
+    margin-block-end: 48px;
+    margin-block-start: 32px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+}
+
+header {
+    border-bottom: 8px solid var(--color-grey-medium);
+    padding: 32px 0;
+}
+
+main {
+    background-color: var(--color-grey-light);
+    padding: 64px 0;
+}
+
+strong {
+    color: var(--color-primary);
+}
+
+.intro-chunk {
+    max-width: 480px;
+    padding: 16px;
+}
+
+.card {
+    background-color: var(--color-white);
+    border-bottom: 8px solid var(--color-grey-medium);
+    padding: 16px;
+}
+
+/* Utilities */
+
+.max-width-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.indented-heading {
+    background-color: var(--color-secondary-light);
+    border-bottom: 8px solid var(--color-secondary-dark);
+    margin: -8px 0 0 -24px;
+    padding: 16px 24px;
+    width: fit-content;
+}
